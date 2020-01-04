@@ -1302,6 +1302,7 @@ input[type="text"] {
     top: 4px;
     margin-left: 2px;
     position: sticky;
+    position: -webkit-sticky;
     padding: 4px;
     z-index: 100;
     border: 1px white outset;
