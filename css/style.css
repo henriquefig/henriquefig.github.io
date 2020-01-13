@@ -1309,3 +1309,34 @@ input[type="text"] {
     width: fit-content;
     background: #e78404;
 }
+.hackerrank-dark{
+    background: none;
+    background-image: url(../images/hackerrank_black.svg);
+    height: 40px;
+    display: block;
+    top: -2.5em;
+    width: 3em;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 6em;
+}
+.hackerrank-dark:hover{
+    background-image: url(../images/hackerrank_orange.svg);
+}
+
+.hackerrank-light{
+    background: white;
+    background-image: url(../images/hackerrank_orange.svg);
+    height: 40px;
+    border-radius: 100%;
+    display: block;
+    top: -2.5em;
+    width: 2.5em;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 25.7em;
+}
