@@ -1307,6 +1307,7 @@ input[type="text"] {
     z-index: 100;
     border: 1px white outset;
     width: fit-content;
+    width: -moz-max-content;
     background: #e78404;
 }
 .hackerrank-dark{
@@ -1320,7 +1321,7 @@ input[type="text"] {
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-    left: 6em;
+    left: 9em;
 }
 .hackerrank-dark:hover{
     background-image: url(../images/hackerrank_orange.svg);
@@ -1338,5 +1339,5 @@ input[type="text"] {
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-    left: 25.7em;
+    left: 27.7em;
 }
