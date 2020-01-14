@@ -201,10 +201,11 @@
 			    else if($(val).attr('type')!=undefined && $(val).attr('type')=='submit')
 			    	$(val).val(ptjson[i]);
 			    else
-					$(val).html(ptjson[i])
+				$(val).html(ptjson[i])
 			})
 			$(".selected-lang").removeClass('selected-lang');
 			$(".pt").addClass('selected-lang');
+			$(".icon-linkedin").parent().attr('href','https://www.linkedin.com/in/henrique-nobre-figueiredo')
 		}
 	};
 	
