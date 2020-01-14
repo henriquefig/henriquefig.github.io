@@ -1307,6 +1307,7 @@ input[type="text"] {
     z-index: 100;
     border: 1px white outset;
     width: fit-content;
+    width: -moz-max-content;
     background: #e78404;
 }
 .hackerrank-dark{
