@@ -207,6 +207,19 @@
 			$(".pt").addClass('selected-lang');
 			$(".icon-linkedin").parent().attr('href','https://www.linkedin.com/in/henrique-nobre-figueiredo')
 		}
+		if(sessionStorage.getItem('language')!=undefined && sessionStorage.getItem('language')=='es')
+		{
+			$(".trans").each(function(i,val){
+			    if($(val).attr('placeholder')!=undefined && $(val).attr('placeholder')!='')
+			    	$(val).attr('placeholder',esjson[i]);
+			    else if($(val).attr('type')!=undefined && $(val).attr('type')=='submit')
+			    	$(val).val(esjson[i]);
+			    else
+				$(val).html(esjson[i])
+			})
+			$(".selected-lang").removeClass('selected-lang');
+			$(".es").addClass('selected-lang');
+		}
 	};
 	
 	$(function(){
