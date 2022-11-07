@@ -446,6 +446,9 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 50%;
   margin-left: 0px;
 }
+.timeline .timeline-heading{
+  cursor: pointer;
+}
 @media screen and (max-width: 768px) {
   .timeline:before {
     margin-left: -64px;
