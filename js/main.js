@@ -196,12 +196,13 @@
 		if(sessionStorage.getItem('language')!=undefined && sessionStorage.getItem('language')=='pt')
 		{
 			$(".trans").each(function(i,val){
+				let translation = ptjson[$(val).attr('id')];
 			    if($(val).attr('placeholder')!=undefined && $(val).attr('placeholder')!='')
-			    	$(val).attr('placeholder',ptjson[i]);
+			    	$(val).attr('placeholder',translation);
 			    else if($(val).attr('type')!=undefined && $(val).attr('type')=='submit')
-			    	$(val).val(ptjson[i]);
+			    	$(val).val(translation);
 			    else
-				$(val).html(ptjson[i])
+				$(val).html(translation)
 			})
 			$(".selected-lang").removeClass('selected-lang');
 			$(".pt").addClass('selected-lang');
@@ -235,7 +236,7 @@
             event.preventDefault();
             // generate the contact number value
             this.contact_number.value = Math.random() * 100000 | 0;
-            emailjs.sendForm('gmail', 'template_TGgcNqcG', this);
+            emailjs.sendForm('service_9814kqt', 'template_TGgcNqcG', this);
         });
 
         //Smoth anchor scroll
@@ -246,7 +247,11 @@
 		        scrollTop: $($.attr(this, 'href')).offset().top
 		    }, 500);
 		 });
-        
+        $('.timeline-panel').on('click', function() {
+        	$(this).find('small').fadeToggle();
+        	$(this).find('.timeline-body').fadeToggle();
+        });
+
 		languagecheck();
 		contentWayPoint();
 		goToTop();

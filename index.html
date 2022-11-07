@@ -47,7 +47,7 @@
 	</head>
 	<body>
 		
-	<div class='lang-div' hidden>
+	<div class='lang-div'>
 		<img class="flag selected-lang en" onclick="languageswitch('en')" src="images/en_flag.png">
 		<img class="flag pt" onclick="languageswitch('pt')" src="images/pt_flag.png">
 		<img class="flag es" onclick="languageswitch('es')" src="images/es_flag.png" style='display:none'>
@@ -84,21 +84,19 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 class="trans">About Me</h2>
+						<h2 class="trans" id="about">About Me</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4">
 						<ul class="info">
-							<li><span class="first-block trans">Full Name:</span><span class="second-block">Henrique Nobre de Figueiredo</span></li>
-							<li><span class="first-block trans">Phone:</span><span class="second-block">+351 938746977</span></li>
+							<li><span class="first-block trans" id="fullname">Full Name:</span><span class="second-block">Henrique Nobre de Figueiredo</span></li>
 							<li><span class="first-block trans">Email:</span><a href='#contact' class="second-block">nf.henrique@gmail.com</a></li>
-							<li><span class="first-block trans">Address:</span><span class="second-block">Rua do Vale Churido 29, 5º ESQ Trás, 5300-389 Bragança</span></li>
 						</ul>
 					</div>
 					<div class="col-md-8">
-						<h2 class="trans">Hello There!</h2>
-						<p class='trans'>
+						<h2 class="trans" id="hello">Hello There!</h2>
+						<p class='trans' id="intro">
 							Do I like to code? I love it, but life wouldn't be so nice if I couldn't see the impact of my work in the lives of our clients, in the lives of my colleagues even in my own life.
 							<br><br>
 							As an Integrations Engineer, I've worked with countless APIs (SOAP/REST), authentication methods and architectural challenges. Being around so many and diverse APIs, I've become quite an advocate of good documentations, and the constant contact with clients and partners led me to develop the ATTYC approach <i>(Avoid tears, test your code!)</i>, prioritizing testing every bit of code.
@@ -130,24 +128,25 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 class="trans">My Resume</h2>
+						<h2 class="trans" id="mycv">My Resume</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0">
 						<ul class="timeline">
 							<li class="timeline-heading text-center animate-box">
-								<div><h3 class="trans">Work Experience</h3></div>
+								<div><h3 class="trans" id="workexp">Work Experience</h3></div>
 							</li>
 							<li class="animate-box timeline-inverted">
 								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title trans">Integrations Engineer</h3>
-										<span class="company">Infraspeak - Mar. 2020 - <span class='trans'>Current</span></span>
+										<h3 class="timeline-title trans" id="integrationseng">Integrations Engineer</h3>
+										<span class="company">Infraspeak - Mar. 2020 - <span class='trans' id="current">Current</span></span>
+										<small class="trans" id="see-more">Click to see more</small>
 									</div>
-									<div class="timeline-body">
-										<p class='trans'>
+									<div class="timeline-body" hidden>
+										<p class='trans' id="infraspeak-job-desc">
 											As an Integrations Engineer, I've been responsible for helping our clients to have a seamless experience and to take the best value out of Infraspeak.<br>
 
 											Our moto of being a source of good life, makes us thrive to create our integrations and develop our API to be as Plug&Play as possible, improving the user experience of our partners.<br>
@@ -163,11 +162,12 @@
 								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title trans">Fullstack Software Developer</h3>
+										<h3 class="timeline-title trans" id="fullstack">Fullstack Software Developer</h3>
 										<span class="company">JABA-translations - Jan. 2019 - Mar. 2020</span>
+										<small class="trans" id="see-more">Click to see more</small>
 									</div>
-									<div class="timeline-body">
-										<p class='trans'>As fullstack software developer I've developed several tools to aid not only in the translation process, but in the project and resource managing processes.<br>
+									<div class="timeline-body" hidden>
+										<p class='trans' id='fullstack-job-desc'>As fullstack software developer I've developed several tools to aid not only in the translation process, but in the project and resource managing processes.<br>
 										Most of my projects were developed in Laravel, although I've worked on some legacy projects developed in vanilla PHP, as well as migrated some to Laravel.</p>
 									</div>
 								</div>
@@ -176,11 +176,12 @@
 								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title trans">Intern Software Developer</h3>
+										<h3 class="timeline-title trans" id="intern">Intern Software Developer</h3>
 										<span class="company">GISGEO - 2017 Jan. - 2017 Jul.</span>
+										<small class="trans" id="see-more">Click to see more</small>
 									</div>
-									<div class="timeline-body">
-										<p class='trans'>
+									<div class="timeline-body" hidden>
+										<p class='trans' id="intern-job-desc">
 											My internship was focused on developing a web app "GeoCarEyes" to be integrated in a core product "GeoCar".
 											I've also documented everything regarding this new app, from developer guide to user guide.<br>
 											Even though this product was the main target, with some spare time I've developed some internal tools to aid in the company inner processes.
@@ -192,11 +193,12 @@
 								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title trans">Electrical Manager</h3>
+										<h3 class="timeline-title trans" id="electmanager">Electrical Manager</h3>
 										<span class="company">Formula Cruisers - 2015 Jan. - 2015 Jul.</span>
+										<small class="trans" id="see-more">Click to see more</small>
 									</div>
-									<div class="timeline-body">
-										<p class='trans'>
+									<div class="timeline-body" hidden>
+										<p class='trans' id="electmanager-job-desc">
 											As part of my Erasmus Project Semester (EPS) experience I took part of the Formula Cruisers team to design and build a race car for the Formula Student competition.<br>
 											As an Electrical Manager I oversaw the design and assembly of all the electrical components, making sure they complied with the Formula Student regulations, as well as, how they would fit in the race car.<br>
 											Even though my job was to manage the electrical team, I also participated in the development of those components, specially in time crunch moments. 
@@ -207,17 +209,18 @@
 
 							<br>
 							<li class="timeline-heading text-center animate-box">
-								<div><h3 class='trans'>Education</h3></div>
+								<div><h3 class='trans' id="education">Education</h3></div>
 							</li>
 							<li class="timeline-unverted animate-box">
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title trans">International English Language Testing System (IELTS)</h3>
+										<h3 class="timeline-title trans" id="ielts">International English Language Testing System (IELTS)</h3>
 										<span class="company">British Council (Porto) - 2018 Jan.</span>
+										<small class="trans" id="see-more">Click to see more</small>
 									</div>
-									<div class="timeline-body">
-										<p class='trans'>English certification exam.<br>
+									<div class="timeline-body" hidden>
+										<p class='trans' id="ielts-desc">English certification exam.<br>
 											Final Score: IELTS band 8/9<br>(Listening: 9, Reading: 8.5, Writing: 7, Speaking: 8)
 										</p>
 									</div>
@@ -227,11 +230,12 @@
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title trans">Master's Degree in Electrotechnical Engineering</h3>
+										<h3 class="timeline-title trans" id="masters">Master's Degree in Electrotechnical Engineering</h3>
 										<span class="company">Instituto Superior de Engenharia do Porto (ISEP) - 2015 - 2017</span>
+										<small class="trans" id="see-more">Click to see more</small>
 									</div>
-									<div class="timeline-body">
-										<p class='trans'>My master's degree specialization was Telecommunications, which allowed me to develop my networking skills, as well as improve on my software developing skills, specifically web development.<br>
+									<div class="timeline-body" hidden>
+										<p class='trans' id="masters-desc">My master's degree specialization was Telecommunications, which allowed me to develop my networking skills, as well as improve on my software developing skills, specifically web development.<br>
 										Final score: 16/20</p>
 									</div>
 								</div>
@@ -240,11 +244,12 @@
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title trans">Agile project management with Scrum and Kanban</h3>
-										<span class="company trans">Instituto Superior de Engenharia do Porto (ISEP) - 2017 Jul. (16 hours)</span>
+										<h3 class="timeline-title trans" id="agile">Agile project management with Scrum and Kanban</h3>
+										<span class="company trans" id="isep">Instituto Superior de Engenharia do Porto (ISEP) - 2017 Jul. (16 hours)</span>
+										<small class="trans" id="see-more">Click to see more</small>
 									</div>
-									<div class="timeline-body">
-										<p class='trans'>A certified course regarding the basics of Agile development with a bigger focus on the established methodologies of Scrum and Kanban</p>
+									<div class="timeline-body" hidden>
+										<p class='trans' id="agile-desc">A certified course regarding the basics of Agile development with a bigger focus on the established methodologies of Scrum and Kanban</p>
 									</div>
 								</div>
 							</li>
@@ -252,11 +257,12 @@
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title trans">Erasmus’ project (European Project Semester, EPS)</h3>
-										<span class="company trans">The Hague University of Applied Sciences (Netherlands) - 2015 Jan. - 2015 Jul.</span>
+										<h3 class="timeline-title trans" id="erasmus">Erasmus’ project (European Project Semester, EPS)</h3>
+										<span class="company trans" id="hague">The Hague University of Applied Sciences (Netherlands) - 2015 Jan. - 2015 Jul.</span>
+										<small class="trans" id="see-more">Click to see more</small>
 									</div>
-									<div class="timeline-body">
-										<p class='trans'>
+									<div class="timeline-body" hidden>
+										<p class='trans' id="erasmus-desc">
 											As my EPS project I took part in the Formula Student Project working with multicultural partners in a multidisciplinary project.
 											The Formula Student is a competition between engineering students from all around the world with the goal to build and compete with a race car in a racing circuit (in Silverstone).<br>
 											The race car also was compliant with all the mandatory security checks imposed by the Formula Student regulations.</p>
@@ -267,11 +273,12 @@
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title trans">Bachelor's Degree in Electrotechnical Engineering</h3>
+										<h3 class="timeline-title trans" id="bachelor">Bachelor's Degree in Electrotechnical Engineering</h3>
 										<span class="company">Instituto Superior de Engenharia do Porto (ISEP) - 2012 - 2015</span>
+										<small class="trans" id="see-more">Click to see more</small>
 									</div>
-									<div class="timeline-body">
-										<p class='trans'>My bachelor's degree was my first step into the world of engineering and from very early stages it made me realize my passion for software development.<br>
+									<div class="timeline-body" hidden>
+										<p class='trans' id="bachelor-desc">My bachelor's degree was my first step into the world of engineering and from very early stages it made me realize my passion for software development.<br>
 										Final score: 16/20</p>
 									</div>
 								</div>
@@ -280,11 +287,12 @@
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title trans">CISCO's CCNA1 (Cisco Certified Network Associate)</h3>
-										<span class="company trans">Cisco's Academy (Porto) - 2013 Jan. - 2013 Jul.</span>
+										<h3 class="timeline-title trans" id="cisco">CISCO's CCNA1 (Cisco Certified Network Associate)</h3>
+										<span class="company trans" id="cisco-academy">Cisco's Academy (Porto) - 2013 Jan. - 2013 Jul.</span>
+										<small class="trans" id="see-more">Click to see more</small>
 									</div>
-									<div class="timeline-body">
-										<p class='trans'>A certified course introduces the architecture, structure, functions, components, and models of the Internet and other computer networks.
+									<div class="timeline-body" hidden>
+										<p class='trans' id="cisco-desc">A certified course introduces the architecture, structure, functions, components, and models of the Internet and other computer networks.
 										</p>
 									</div>
 								</div>
@@ -299,63 +307,63 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 class='trans'>Projects</h2>
+						<h2 class='trans' id="projects">Projects</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 text-center col-padding animate-box">
-						<a href="#hrm" class="work" style="background-image: url(images/portfolio-i.jpeg);background-position: 0px;">
+						<a href="#inf-anchor" class="work" style="background-image: url(images/portfolio-i.jpeg);background-position: 0px;">
 							<div class="desc">
 								<h3>Infraspeak</h3>
-								<span class='trans'>Integrations / API security</span>
+								<span class='trans' id="integrations-sec">Integrations / API security</span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-4 text-center col-padding animate-box">
-						<a href="#hrm" class="work" style="background-image: url(images/portfolio-1.jpg);background-position: 0px;">
+						<a href="#hrm-anchor" class="work" style="background-image: url(images/portfolio-1.jpg);background-position: 0px;">
 							<div class="desc">
 								<h3>HRM</h3>
-								<span class='trans'>Human Resource Manager</span>
+								<span class='trans' id="hrm">Human Resource Manager</span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-4 text-center col-padding animate-box">
-						<a href="#crm" class="work" style="background-image: url(images/portfolio-2.jpg);">
+						<a href="#crm-anchor" class="work" style="background-image: url(images/portfolio-2.jpg);">
 							<div class="desc">
 								<h3>CRM</h3>
-								<span class='trans'>Contact Relationship Manager</span>
+								<span class='trans' id="crm">Contact Relationship Manager</span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 text-center col-padding animate-box">
-						<a href="#geocareyes" class="work" style="background-image: url(images/portfolio-3.jpg);">
+						<a href="#geocareyes-anchor" class="work" style="background-image: url(images/portfolio-3.jpg);">
 							<div class="desc">
 								<h3>GeoCarEyes</h3>
-								<span class='trans'>Automated Vehicle/Fleet control</span>
+								<span class='trans' id="geocareyes">Automated Vehicle/Fleet control</span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 text-center col-padding animate-box">
-						<a href="#cataloguer" class="work" style="background-image: url(images/portfolio-4.jpg);">
+						<a href="#cataloguer-anchor" class="work" style="background-image: url(images/portfolio-4.jpg);">
 							<div class="desc">
 								<h3>Cataloguer</h3>
-								<span class='trans'>Web catalogue designer</span>
+								<span class='trans' id="cataloguer">Web catalogue designer</span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 text-center col-padding animate-box">
-						<a href="#qpo" class="work" style="background-image: url(images/portfolio-5.jpg);">
+						<a href="#qpo-anchor" class="work" style="background-image: url(images/portfolio-5.jpg);">
 							<div class="desc">
 								<h3>QPO?</h3>
-								<span class='trans'>Household expenses manager</span>
+								<span class='trans' id="qpo">Household expenses manager</span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 text-center col-padding animate-box">
-						<a href="#readme" class="work" style="background-image: url(images/portfolio-6.jpg);background-position: 30%;">
+						<a href="#readme-anchor" class="work" style="background-image: url(images/portfolio-6.jpg);background-position: 30%;">
 							<div class="desc">
-								<h3 class='trans'>Readme converter</h3>
-								<span class='trans'>Generate html from .md files</span>
+								<h3 class='trans' id="readme-converter">Readme converter</h3>
+								<span class='trans' id="readme-converter-sub-title">Generate html from .md files</span>
 							</div>
 						</a>
 					</div>
@@ -367,12 +375,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="fh5co-blog animate-box" id='casinoj'>
+						<div class="fh5co-blog animate-box" id='inf-anchor'>
 							<div class="blog-text">
-								<h3 >Infraspeak</h3>
-								<p class='trans'>During my time in Infraspeak, I've developed quite a few projects, mostly being integrations with our clients' software - SAP, PowerBI, Zapier, Xero, Airthings as well as more niche application in ERP, Finance, etc.<br>
+								<h3>Infraspeak</h3>
+								<p class='trans' id="infraspeak-desc">During my time in Infraspeak, I've developed quite a few projects, mostly being integrations with our clients' software - SAP, PowerBI, Zapier, Xero, Airthings as well as more niche application in ERP, Finance, etc.<br>
 								I also had a chance to be in charge of upgrading our framework through it's different versions, as well as upgrading our PHP docker images. <br>
-								Finally I was also responsible for developing our Throttling system, for implement and scale our Webhooks system (using a queueing system), develop Single Sign-On authentication for our entriprese clients  </p>
+								Finally I was also responsible for developing our Throttling system, for implement and scale our Webhooks system (using a queueing system), develop Single Sign-On authentication for our enterprise clients  </p>
 								<a class="blog-bg" style="background-image: url(images/portfolio-i.jpeg);"></a>
 								<br>
 								<i class='text-mutted small'>
@@ -385,10 +393,10 @@
 						</div>
 					</div>
 					<div class="col-md-12">
-						<div class="fh5co-blog animate-box" id='hrm'>
+						<div class="fh5co-blog animate-box" id='hrm-anchor'>
 							<div class="blog-text">
-								<h3 class='trans'>Human Resource Manager</h3>
-								<p class='trans'>
+								<h3 class='trans' id="hrm">Human Resource Manager</h3>
+								<p class='trans' id="hrm-desc">
 								A web app for human resource managing, specifically in the translation domain.<br>
 								It's focused on the recruitment process of translator/translation companies. It also allows for the integration with TMS (Translation Management System), allowing for a continuous management of the translation resources.</p>
 								<a class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>
@@ -403,10 +411,10 @@
 						</div>
 					</div>
 					<div class="col-md-12">
-						<div class="fh5co-blog animate-box" id='crm'>
+						<div class="fh5co-blog animate-box" id='crm-anchor'>
 							<div class="blog-text">
-								<h3 class='trans'>Contact Relationship Manager</h3>
-								<p class='trans'>A web app for contact relationship managing.<br>
+								<h3 class='trans' id="crm">Contact Relationship Manager</h3>
+								<p class='trans' id="crm-desc">A web app for contact relationship managing.<br>
 								It connects to your email account through Gmail's API and maps your emails in contacts, companies and oportunities. An important tool to organize current clients, possible clients and even the resources/suppliers of your business.</p>
 								<a class="blog-bg" style="background-image: url(images/portfolio-2.jpg);"></a>
 								<br>
@@ -417,10 +425,10 @@
 						</div>
 					</div>
 					<div class="col-md-12">
-						<div class="fh5co-blog animate-box" id='geocareyes'>
+						<div class="fh5co-blog animate-box" id='geocareyes-anchor'>
 							<div class="blog-text">
 								<h3>GeoCarEyes</h3>
-								<p class='trans'>A dynamic interface for fleet management.<br>
+								<p class='trans' id="geocareyes-desc">A dynamic interface for fleet management.<br>
 								It offers services like real time tracking, traffic flow, alerts, scheduled services, efficiency indexes, among others. All this information is shown through the use of a Leaflet.js map. This application is a complement to the product GeoCar from Gisgeo.
 								</p>
 								<a class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>
@@ -432,10 +440,10 @@
 						</div>
 					</div>
 					<div class="col-md-12">
-						<div class="fh5co-blog animate-box" id='cataloguer'>
+						<div class="fh5co-blog animate-box" id='cataloguer-anchor'>
 							<div class="blog-text">
 								<h3 >Cataloguer</h3>
-								<p class='trans'>A web application for creating and styling online catalogues.<br>
+								<p class='trans' id="cataloguer-desc">A web application for creating and styling online catalogues.<br>
 								Through a list (CSV), an user can upload products and style the way the product card will show up as well as style the page layout.<br>
 								After the pretended configuration is made, a public link for the catalogues becomes available. </p>
 								<a class="blog-bg" style="background-image: url(images/portfolio-4.jpg);"></a>
@@ -450,10 +458,10 @@
 						</div>
 					</div>
 					<div class="col-md-12">
-						<div class="fh5co-blog animate-box" id='qpo'>
+						<div class="fh5co-blog animate-box" id='qpo-anchor'>
 							<div class="blog-text">
 								<h3 >"Quem Paga o quê?"</h3>
-								<p class='trans'>"Quem Paga o quê?" -> Who pays what.<br> A web app for shared households to manage their shared expenses. It's aimed at shared student houses but can be used for any kind of shared expenses.</p>
+								<p class='trans' id="qpo-desc">"Quem Paga o quê?" -> Who pays what.<br> A web app for shared households to manage their shared expenses. It's aimed at shared student houses but can be used for any kind of shared expenses.</p>
 								<a class="blog-bg" style="background-image: url(images/portfolio-5.jpg);"></a>
 								<br>
 								<i class='text-mutted small mb-2'>
@@ -466,10 +474,10 @@
 						</div>
 					</div>
 					<div class="col-md-12">
-						<div class="fh5co-blog animate-box" id='readme'>
+						<div class="fh5co-blog animate-box" id='readme-anchor'>
 							<div class="blog-text">
-								<h3 class='trans'>Readme Converter</h3>
-								<p class='trans'>README converter is a small app based on Showdown.js to help you generate HTML versions of a full README (.md) file.</p>
+								<h3 class='trans' id="readme-converter">Readme Converter</h3>
+								<p class='trans' id="readme-converter-desc">README converter is a small app based on Showdown.js to help you generate HTML versions of a full README (.md) file.</p>
 								<a class="blog-bg" style="background-image: url(images/portfolio-6.jpg);"></a>
 								<br>
 								<i class='text-mutted small'>
@@ -490,7 +498,7 @@
 			<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
 			</div>
 			<div class="choose animate-box">
-				<h2 id='contact' class='trans'>Contact</h2> 
+				<h2 id='contact' class='trans' id="contact">Contact</h2> 
 				<form id="contact-form">
         			<input type="hidden" name="contact_number">
 
@@ -514,7 +522,7 @@
       				<div class="g-recaptcha" data-sitekey="6LfEF7sUAAAAADUNBv7qwYXKjrzJFC97wVwb_xrc"></div>
       				<br>
 					<div class="form-group">
-						<input type="submit" value="Send me a message" class="btn btn-primary trans">
+						<input type="submit" id="send-mail" value="Send me a message" class="btn btn-primary trans">
 					</div>
 
 				</form>	
@@ -525,24 +533,24 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 class='trans'>Hobbies</h2>
+						<h2 class='trans' id="hobbies">Hobbies</h2>
 					</div>
 				</div>
 				<div class='row'>
 					<div class='col-md-12'>
 						<div class="fh5co-blog animate-box">
 							<div class="blog-text">
-								<h3 class='trans'>Cubes</h3>
-								<p class='trans'>
+								<h3 class='trans' id="cubes">Cubes</h3>
+								<p class='trans' id="cubes-desc">
 									In 2007 I learned how to solve the Rubik's cube and ever since, this 	kind of twisty puzzles have been a passion for me.<br>
 									Bellow is a picture of my <u>current</u> cube collection.
 								</p>
 								<a class="blog-bg" style="background-image: url(images/cubes.jpg);height:400px"></a><br>
-								<p class='trans'>
+								<p class='trans' id="cubes-showoff">
 									I can solve all of them and I've even been in some cube competitions.<br>
 									These are my best times for each category (some of the cubes I've never timed so I'll give you an average amount of time I take to solve them):
 								</p>
-								<p class='trans text-center'>
+								<p class='trans text-center' id="cubes-times">
 									<u>2x2x2</u>: 3.64 seconds | <u>3x3x3</u>: 9.28 seconds | <u>3x3x3 One Handed</u>: 28.64 seconds | <u>4x4x4</u>: 46.68 seconds<br>
 									<u>5x5x5</u>: 2:24.12 minutes | <u>7x7x7</u>: 7:48.92 minutes | <u>Megaminx</u>: 2:24.66 minutes | <u>Gigaminx</u>: ≈ 30 minutes<br>
 									<u>Mastermorphix</u>: ≈ 2/3 minutes | <u>Megamorphix</u>: ≈ 35 minutes | <u>Gigamorphix</u>: ≈ 30 minutes<br>
@@ -553,8 +561,8 @@
 					<div class='col-md-12'>
 						<div class="fh5co-blog animate-box">
 							<div class="blog-text">
-								<h3 class='trans'>Music</h3>
-								<p class='trans'>
+								<h3 class='trans' id="music">Music</h3>
+								<p class='trans' id="music-desc">
 									When I was 10 years old my parents thought it would be good for me to learn music, so I started piano lessons. It provided me the first steps into music and although I wasn't that keen on learning the piano, it sparked my interest in making music.<br>
 									In 2011 I picked up a bass for the first time and it's been my instrument of choice ever since!<br>
 									Bellow is a picture of my treasured bass.
@@ -566,8 +574,8 @@
 					<div class='col-md-12'>
 						<div class="fh5co-blog animate-box">
 							<div class="blog-text">
-								<h3 class='trans'>Gaming</h3>
-								<p class='trans'>
+								<h3 class='trans' id="gaming">Gaming</h3>
+								<p class='trans' id="gaming-desc">
 									And of course, gaming! I really love getting a new game and just explore it's intricate story, discover their collectibles, defeat those challeging bosses or levels <br>
 									I'm more of a fan of offline games (Nintendo fanboy as well!) but I'm not shy if you invite me to play some World Of Warcraft!<br>
 									Here's one of my favorite games, Celeste!
@@ -583,7 +591,7 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 class='trans'>Currently living in Porto</h2>
+						<h2 class='trans' id="where-i-am">Currently living in Porto</h2>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48059.753045791454!2d-8.62195365!3d41.162142949999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465abc4e153c1%3A0xa648d95640b114bc!2sPorto!5e0!3m2!1spt-PT!2spt!4v1667727579729!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;box-shadow: 0px 2px 6px 4px rgb(98 105 221 / 38%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
